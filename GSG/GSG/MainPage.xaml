@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GSG"
+             x:Class="GSG.MainPage">
+    <MasterDetailPage.Master >
+        <ContentPage Title="Ofos" Icon="icon.png" Padding="0,25,0,0">
+            <ContentPage.Content>
+                <StackLayout Padding="0,25,0,0">
+                    <Image Source="Logo_Menu.png" ></Image>
+                    <Grid Padding="0,25,0,0">
+
+                    </Grid>
+                    <Button HeightRequest="40"  Image="ic_verified_user_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent"  Text="Register"></Button>
+                    <Button HeightRequest="40" Image="ic_build_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="Support"></Button>
+                    <Button HeightRequest="40" Image="ic_view_list_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="Support Status"></Button>
+                    <Button HeightRequest="40" Image="ic_credit_card_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="My Bills"></Button>
+                    <Button HeightRequest="40" Image="ic_feedback_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="Feedback"></Button>
+                    <Grid Padding="0,25,0,0">
+
+                    </Grid>
+                    <BoxView   VerticalOptions="Center" 
+                               HorizontalOptions="CenterAndExpand"
+                               HeightRequest="1"
+                               WidthRequest="300"
+                               Color="#5b5d68">
+
+                    </BoxView>
+                    <Grid Padding="0,15,0,0">
+
+                    </Grid>
+                    <Button HeightRequest="40" Image="ic_input_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="Login"></Button>
+                    <Button HeightRequest="40" Image="ic_perm_identity_black_24dp.png" HorizontalOptions="StartAndExpand" BorderColor="Transparent" BackgroundColor="Transparent" Text="Your Profile"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <ContentPage.Content>
+                <StackLayout>
+                    <Label Text="This is Detail Page"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

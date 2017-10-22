@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="GSG.Create_Support_Ticket" Icon="Icon_32_32.png" Title="Go Speedy Go">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Icon_32_32.png"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+        <StackLayout >
+            <maps:Map  HeightRequest="380"
+                x:Name="MyMap"
+                IsShowingUser="true"
+                MapType="Street"
+                
+            />
+            <Label x:Name="txt_Current_Location"></Label>
+            <Entry x:Name="txt_issue" Placeholder="Exter the issue in brief"></Entry>
+            <Button Text="I Need Help" x:Name="cmd_support_ticket"  BackgroundColor="CornflowerBlue" TextColor="Black" Clicked="cmd_support_ticket_Clicked"></Button>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage> 
